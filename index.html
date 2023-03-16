@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- in mobile set initial zoom level of page to 100%, set site size to equal device width not a larger canvas that is shrunk down-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Grid Framwork Scaffold</title>
+    <!-- Link to reset or normalize before main.css
+    only choose one -->
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="hidden">contact page</h1>
+    <div class="container">
+    <!-- header -->
+    <header>
+        <section class="headerCon grid-con">
+            <h1 class="hidden">"main header"</h1>
+            <a href="index.html" id="logo" class="boxIcon col-start-2 col-end-4 m-col-start-1 m-col-end-3">LOGO</a>
+            <nav class="mainNav col-span-full m-col-start-8 m-col-end-13">
+                <menu id="burger-con">
+                    <li><a class="boxButton" href="contact.html">contact</a></li>
+                    <li><a class="boxButton" href="*">menu2</a></li>
+                    <li><a class="boxButton" href="*">menu3</a></li>
+                    <li><a class="boxButton" href="*">menu4</a></li>
+                    <li><a class="boxButton" href="*">menu5</a></li>
+                </menu>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <!--  -->
+        <section class="mainHero boxImgCon">
+            <div class="heroOverlay grid-con">
+                <h1 class="boxHeading col-start-2 col-end-4 m-col-start-5 m-col-end-9">About Quatro</h1>
+                <p class="boxText col-span-full m-col-start-4 m-col-end-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque harum quo.</p>
+            </div>
+        </section>
+        <section class="grid-con" id="missionCon">
+            <div class="col-span-full m-col-start-2 m-col-end-6" id="missionText">
+                <h3 class="boxHeading">Our Mission</h3>
+                <p class="boxText">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repudiandae obcaecati incidunt tenetur illo consequatur quidem.
+            </p>
+            </div>
+            <div class="boxImgCon col-span-full m-col-start-7 m-col-end-12" id="missionImg">Mission Image</div>
+        </section>
+                <!-- QnA -->
+                <section class="grid-con boxBackCon" id="QnACon">
+                    <!-- <div id="QnAText"> -->
+                        <h2 class="boxHeading col-span-full m-col-start-5 m-col-end-9">Common Questions</h2>
+                        <p class="boxText col-span-full m-col-start-3 m-col-end-11">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    <!-- </div> -->
+                    <!-- <div class="QnARow whitebumper"> -->
+                        <div class="boxText col-span-full m-col-start-2 m-col-end-10 ">
+                            <p class="Q">Q: Lorem ipsum dolor sit amet, consectetur adipisicing elit?</p>
+                            <p>A: Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        </div>
+                        <div class="boxButton col-span-full m-col-start-10 m-col-end-12"><a href="*">View More</a></div>
+                        <div class="whitebumper col-span-full m-col-start-2 m-col-end-12"></div>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

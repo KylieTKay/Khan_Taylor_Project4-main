@@ -1,0 +1,102 @@
+/* @media screen and (min-width: 768px) {
+    #main-logo {order: -1;}    
+} */
+
+    
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+}
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+}
+
+h3 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 40px;
+}
+
+p, input, a, textarea, label {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+input, textarea, button {
+    font-size: 25px;
+    border: none;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p { font-size: 35px;}
+
+/* header */
+
+.headerCon {height: 120px; }
+
+.mainNav {
+    margin: 35px 0 25px 30px;
+}
+
+menu {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+/* menu li a {
+    text-decoration: none;
+    color: white;
+    background: #666;
+    border-radius: 35rem; 
+    margin-left: 30px;
+    padding: 1.66rem .83rem;
+} */
+
+/* Main */
+
+/* *Hero* */
+
+.mainHero { height: 825px; }
+
+.heroOverlay {
+    padding-top: 190px;
+    padding-bottom: 310px;
+}
+
+.heroOverlay h1, .heroOverlay p { 
+    text-align: center;
+}
+
+/* *MISSION* */
+
+#missionText { 
+    margin-top: 40px; 
+    margin-bottom: 100px; 
+}
+
+#missionText h3, #missionText p { 
+    text-align: left;
+}
+
+#missionText h3 { margin-bottom: 35px; }
+
+#missionCon { padding-bottom: 70px; }
+
+/* *QnA* */
+
+#QnACon { 
+    padding-top: 80px; 
+    padding-bottom: 60px; 
+}
+
+.Q {font-weight: 700;}
+
+.whitebumper {
+    border-bottom: solid white 3px; 
+    margin-bottom: 35px; 
+}
