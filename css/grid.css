@@ -34,9 +34,9 @@ body, p, h1, h2, h3, h4, h5 {
    text-decoration: none;
    color: white;
    border-radius: 35rem; 
-   margin-left: 30px;
-   padding: 1.66rem .83rem;
+   padding: 20px 10px;
    height: fit-content;
+   text-align: center;
 }
 
 .boxHeading { 
@@ -50,21 +50,24 @@ body, p, h1, h2, h3, h4, h5 {
 
 .boxBackCon { 
    background: #f2af50; 
-   border-radius: 5px;
    padding: 20px;
    margin-top: 10px;
    margin-bottom:10px;
 }
 
+.boxOverlayCon { 
+   background: rgba(255, 255, 255, 0.667);
+}
+
 .boxImgCon { 
    background: #4db748;  
    color: rgb(27, 27, 27);
-   border-radius: 5px;
    padding: 20px;
    text-align: center;
    margin-top: 10px;
    margin-bottom:10px;
 }
+
 
 .boxText { 
    background: #e1e1e1;  
@@ -81,7 +84,6 @@ body, p, h1, h2, h3, h4, h5 {
    color: rgb(27, 27, 27);
    border-radius: 5px;
    padding: 20px;
-   text-align: center;
    margin-top: 10px;
    margin-bottom:10px;
 }
