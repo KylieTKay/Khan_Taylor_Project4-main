@@ -2,24 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- in mobile set initial zoom level of page to 100%, set site size to equal device width not a larger canvas that is shrunk down-->
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>Grid Framwork Scaffold</title>
-    <!-- Link to reset or normalize before main.css
-    only choose one -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fe8842756b.js" crossorigin="anonymous"></script>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <h1 class="hidden">contact page</h1>
+    <h2 class="hidden">contact page</h2>
     <div class="container">
     <!-- header -->
     <header>
         <section class="headerCon grid-con">
-            <h1 class="hidden">"main header"</h1>
+            <h2 class="hidden">"main header"</h2>
             <a href="index.html" id="logo" class="boxIcon col-start-2 col-end-4 m-col-start-1 m-col-end-3">LOGO</a>
-            <nav class="mainNav col-span-full m-col-start-8 m-col-end-13">
-                <menu id="burger-con">
+            <button class="boxIcon col-start-4 col-end-5" id="hamburger">
+                <i class="fa-solid fa-bars fa-xl"></i>
+            </button>
+           <nav class="mainNav col-span-full
+            m-col-span-5 m-col-end-13" id="burger-con">
+                <menu id="burger-menu">
                     <li><a class="boxButton" href="contact.html">contact</a></li>
                     <li><a class="boxButton" href="*">menu2</a></li>
                     <li><a class="boxButton" href="*">menu3</a></li>
@@ -30,14 +35,17 @@
         </section>
     </header>
     <main>
-        <!--  -->
+        <!-- Hero -->
         <section class="mainHero boxImgCon">
+            <h2 class="hidden">"Hero"</h2>
             <div class="heroOverlay grid-con">
                 <h1 class="boxHeading col-start-2 col-end-4 m-col-start-5 m-col-end-9">About Quatro</h1>
                 <p class="boxText col-span-full m-col-start-4 m-col-end-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque harum quo.</p>
             </div>
         </section>
+        <!-- Mission -->
         <section class="grid-con" id="missionCon">
+            <h2 class="hidden">"Mission"</h2>
             <div class="col-span-full m-col-start-2 m-col-end-6" id="missionText">
                 <h3 class="boxHeading">Our Mission</h3>
                 <p class="boxText">
@@ -46,24 +54,91 @@
             </div>
             <div class="boxImgCon col-span-full m-col-start-7 m-col-end-12" id="missionImg">Mission Image</div>
         </section>
-                <!-- QnA -->
-                <section class="grid-con boxBackCon" id="QnACon">
-                    <!-- <div id="QnAText"> -->
-                        <h2 class="boxHeading col-span-full m-col-start-5 m-col-end-9">Common Questions</h2>
-                        <p class="boxText col-span-full m-col-start-3 m-col-end-11">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    <!-- </div> -->
-                    <!-- <div class="QnARow whitebumper"> -->
-                        <div class="boxText col-span-full m-col-start-2 m-col-end-10 ">
-                            <p class="Q">Q: Lorem ipsum dolor sit amet, consectetur adipisicing elit?</p>
-                            <p>A: Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                        </div>
-                        <div class="boxButton col-span-full m-col-start-10 m-col-end-12"><a href="*">View More</a></div>
-                        <div class="whitebumper col-span-full m-col-start-2 m-col-end-12"></div>
+        <!-- QnA -->
+        <section class="grid-con boxBackCon" id="QnACon">
+                <h2 class="boxHeading col-span-full m-col-start-5 m-col-end-9">Common Questions</h2>
+                <p class="boxText col-span-full m-col-start-3 m-col-end-11">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="boxText col-span-full m-col-start-2 m-col-end-10 ">
+                    <p class="Q">Q: Lorem ipsum dolor sit amet, consectetur adipisicing elit?</p>
+                    <p>A: Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                </div>
+                <div class="boxButton col-span-full m-col-start-10 m-col-end-12"><a href="*">View More</a></div>
+                <div class="whitebumper col-span-full m-col-start-2 m-col-end-12"></div>
+        </section>
+        <!-- contact form -->
+        <section class="grid-con" id="contactSpace">
+            <h2 class="hidden">"Contact"</h2>
+            <div class="contactCon boxBackCon col-span-full m-col-start-2 m-col-end-12">
+                <div class="col-span-full m-col-start-1 m-col-end-5" id="contactForm">
+                    <h2 class="boxHeading">Get In Touch</h2>
+                    <div>
+                        
+                            <a class="boxText"><i class="fa-solid fa-location-dot"></i>&emsp;123 Mockup St., Somewhere</a>
+                
+                           <a class="boxText" href="tel:1-XXX-XXX-XXXX"><i class="fas fa-mobile-alt"></i>&emsp;+1 XXX-XXX-XXXX</a>
+                 
+                            <a class="boxText" href="info&#64;quatro.com
+                            "><i class="fa-solid fa-envelope"></i>&emsp;info&#64;quatro.com</a>
+                    </div>
+                        
+                    <form action="#">
+                        <input class="boxForm col-span-full m-col-start-1 m-col-span-1" id="nameInput" type="text" name="name" placeholder="Name">
 
+                        <input class="boxForm
+                        col-span-full
+                        m-col-start-2 m-col-span-1" id="emailInput" type="text" name="email" placeholder="Email">
+
+                        <textarea class="boxForm col-span-full m-col-start-1 m-col-span-2" name="inquiries" placeholder="Write your message here"></textarea>
+                        
+                        <input class="boxButton col-span-full m-col-start-1 m-col-span-2" id="submitInput" type="submit" value="Send">
+                    </form>
+                </div>
+                <div class="boxImgCon col-span-full m-col-start-6 m-col-end-11" id="formImg">
+                    <div id="contactOverlay">
+                      <h2 class="boxHeading">Get In Touch</h2>
+                    <div class="boxOverlayCon">
+                        
+                            <a class="boxText"><i class="fa-solid fa-location-dot"></i>&emsp;123 Mockup St., Somewhere</a>
+                
+                           <a class="boxText" href="tel:1-XXX-XXX-XXXX"><i class="fas fa-mobile-alt"></i>&emsp;+1 XXX-XXX-XXXX</a>
+                 
+                            <a class="boxText" href="info&#64;quatro.com
+                            "><i class="fa-solid fa-envelope"></i>&emsp;info&#64;quatro.com</a>
+                    </div>    
+                    </div>
+                    
+                </div>                
+            </div>
+        </section>
     </main>
-
+<!-- footer -->
+    <footer>
+        <section class="boxImgCon" id="footerCon">
+            <h2 class="hidden">footer</h2>
+            <div class="grid-con" id="subCon">
+                <h2 class="boxHeading col-start-2 col-end-4 m-col-start-5 m-col-end-9">SUBSCRIBE</h2>
+                <p class="boxText col-span-full m-col-start-5 m-col-end-9">Keep up with Quatro&trade; and sign-up for our newsletter!</p>
+                <form class="col-span-full m-col-span-full" action="#">
+                    <input class="boxForm" type="text" name="email"
+                    placeholder="Email">
+                    <button class="boxButton"><i class="fa-regular fa-paper-plane"></i></button>
+                </form>  
+            </div>
+            <div class="boxOverlayCon  grid-con" id="footerBanner">
+                <small class="boxText col-start-2 col-end-4 m-col-start-3 m-col-end-11" id="copyrights">
+                    Copyright &copy; 2023 Quatro&trade; All Rights Reserved
+                </small>
+                <div class="col-span-full m-col-start-5 m-col-end-9" id="socials">
+                        <a class="boxIcon" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="boxIcon" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="boxIcon" href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </footer>   
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>
